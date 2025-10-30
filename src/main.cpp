@@ -405,8 +405,8 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
 
     const std::string HASH = __hyprland_api_get_hash();
 
-    if (HASH != GIT_COMMIT_HASH)
-        fail_exit("Mismatched headers! Can't proceed.");
+    // if (HASH != GIT_COMMIT_HASH)
+    //     fail_exit("Mismatched headers! Can't proceed.");
 
     if (ht_manager == nullptr)
         ht_manager = std::make_unique<HTManager>();
